@@ -2,10 +2,10 @@ import React from "react";
 import AddItemForm from "./AddItemForm";
 import ButtonGroup from "./ButtonGroup";
 
-export default function Sidebar() {
+export default function Sidebar({ setItems }) {
   return (
     <div className="sidebar">
-      <AddItemForm />
+      <AddItemForm setItems={setItems} />
       <ButtonGroup />
     </div>
   );
